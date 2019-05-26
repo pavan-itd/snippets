@@ -1,0 +1,1 @@
+- **wobble** : an unsteady movement from side to side.
