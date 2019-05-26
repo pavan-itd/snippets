@@ -4,3 +4,4 @@
 - **omnipresent** : (of God) present everywhere at the same time.
 - **inevitable** : certain to happen; unavoidable.
 - **hapless** : अभागी
+- **crockery**: मातीची भांडी
