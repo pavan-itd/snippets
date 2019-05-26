@@ -1,2 +1,4 @@
 - **wobble** : an unsteady movement from side to side.
 - **thwart** : prevent (someone) from accomplishing something.
+- **ubiquitous** : present, appearing, or found everywhere.
+- **omnipresent** : (of God) present everywhere at the same time.
