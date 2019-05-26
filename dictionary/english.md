@@ -5,3 +5,5 @@
 - **inevitable** : certain to happen; unavoidable.
 - **hapless** : अभागी
 - **crockery**: मातीची भांडी
+- **hindrance** : a thing that provides resistance, delay, or obstruction to something or someone.
+- **amenable**: open and responsive to suggestion; easily persuaded or controlled.
