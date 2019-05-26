@@ -7,3 +7,5 @@
 - **crockery**: मातीची भांडी
 - **hindrance** : a thing that provides resistance, delay, or obstruction to something or someone.
 - **amenable**: open and responsive to suggestion; easily persuaded or controlled.
+- **sculptor** : शिल्पकार
+- **chisels ** : छेनी
