@@ -1,3 +1,13 @@
+### HTML markup
+```html
+<div class="tabs">
+  <a href="#" class="btn btn-primary settings-tab" id="updateProfile">Update Profile</a>
+  <a href="#" class="btn btn-primary settings-tab" id="accountSetting">Account Settings</a>
+  <a href="#" class="btn btn-primary settings-tab" id="bootcampSetting">Bootcamp Settings</a>
+</div>
+```
+
+### Jquery script
 ```javascript
 /*
   Make settings tab active after page reload
@@ -20,7 +30,6 @@ function setActiveTab(current_tab) {
 
 function makeTabActive() {
   var storedTab = localStorage.getItem("activeTab");
-  console.log(storedTab);
   $('#' + storedTab).addClass('active');
 }
 
