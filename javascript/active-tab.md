@@ -1,4 +1,4 @@
-```jquery
+```javascript
 /*
   Make settings tab active after page reload
 */
