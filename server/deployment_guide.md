@@ -120,8 +120,12 @@ $ cap production deploy:check
 
 # Create database.yml and secrets.yml file on the server in shared directory
 ```
+* Step9: Install PDF exporter lib
+```bash
+sudo apt-get install libxrender1
+```
 
-* Step9: Deploy the Application
+* Step10: Deploy the Application
 ```bash
 $ cap production deploy
 ```
