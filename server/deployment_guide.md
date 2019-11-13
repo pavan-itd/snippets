@@ -125,7 +125,21 @@ $ sudo systemctl status redis
 $ sudo apt-get install libxrender1
 ```
 
-* Step10: Make change to deploy/production.rb|deploy.rb|environments/production.rb
+* Step10: Install node js for javascript compilation
+```bash
+$ sudo apt-get update
+$ sudo apt install nodejs
+```
+
+* Step11: Install Yarn for asset compilation
+```bash
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+$ sudo apt update
+$ sudo apt install yarn
+```
+
+* Step12: Make change to deploy/production.rb|deploy.rb|environments/production.rb
 ```bash
 # Add the IP address and user-name of server
 # Add the SSH key to the Github account where app repository belongs
@@ -137,7 +151,7 @@ $ cap production deploy:check
 # Create database.yml and secrets.yml file on the server in shared directory
 ```
 
-* Step11: Deploy the Application
+* Step13: Deploy the Application
 ```bash
 $ cap production deploy
 ```
