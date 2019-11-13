@@ -96,6 +96,9 @@ server {
   }
 }
 
+# Validate the installation of Passenger
+$ sudo /usr/bin/passenger-config validate-install
+
 $ sudo service nginx reload
 
 ```
