@@ -60,6 +60,9 @@ $ sudo apt-get install -y nginx-extras libnginx-mod-http-passenger
 $ if [ ! -f /etc/nginx/modules-enabled/50-mod-http-passenger.conf ]; then sudo ln -s /usr/share/nginx/modules-available/mod-http-passenger.load /etc/nginx/modules-enabled/50-mod-http-passenger.conf ; fi
 $ sudo ls /etc/nginx/conf.d/mod-http-passenger.conf
 
+# Find ruby installtion dir
+$ whereis ruby
+
 # Change the 'passenger_ruby' with Ruby location
 $ sudo nano /etc/nginx/conf.d/mod-http-passenger.conf
 $ sudo service nginx start
