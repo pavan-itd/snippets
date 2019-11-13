@@ -109,7 +109,20 @@ $ createdb -O deploy <database-name>
 $ exit
 ```
 
-* Step8: Make change to deploy/production.rb|deploy.rb|environments/production.rb
+* Step8: Install Redis server
+```bash
+$ sudo apt update
+$ sudo apt install redis-server
+# Check status of redis server
+$ sudo systemctl status redis
+```
+
+* Step9: Install PDF exporter lib
+```bash
+$ sudo apt-get install libxrender1
+```
+
+* Step10: Make change to deploy/production.rb|deploy.rb|environments/production.rb
 ```bash
 # Add the IP address and user-name of server
 # Add the SSH key to the Github account where app repository belongs
@@ -120,12 +133,8 @@ $ cap production deploy:check
 
 # Create database.yml and secrets.yml file on the server in shared directory
 ```
-* Step9: Install PDF exporter lib
-```bash
-sudo apt-get install libxrender1
-```
 
-* Step10: Deploy the Application
+* Step11: Deploy the Application
 ```bash
 $ cap production deploy
 ```
