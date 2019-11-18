@@ -16,6 +16,21 @@ $ pg_restore -U <user-name> -h localhost -v --clean --no-owner --no-privileges -
 
 ***
 
+### Production commands
+
+```bash
+$ bundle exec rake db:drop RAILS_ENV=production DISABLE_DATABASE_ENVIRONMENT_CHECK=1
+
+$ sudo su - postgres
+
+$ createdb -O deploy <database-name>
+
+$psql -U deploy -h localhost  -d grandspeed_production < /home/deploy/<database-backup-file>
+
+$ cap production deploy
+
+```
+
 ### Application deployment steps 18.04
 
 * Step1: Create droplet on Digital Ocean
