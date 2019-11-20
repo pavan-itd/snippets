@@ -6,13 +6,13 @@
 
 ```php
 <?php 
-function execPrint($command) {
+  function execPrint($command) {
     $result = array();
     exec($command, $result);
     foreach ($result as $line) {
-        print($line . "\n");
+      print($line . "\n");
     }
-}
+  }
 
 // Replace the username and password with yours
 print("<pre>" . execPrint("git pull http://username:password@github.com/<user>/<repository>.git master") . "</pre>");
