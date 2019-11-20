@@ -14,8 +14,9 @@
     }
   }
 
-// Replace the username and password with yours
-print("<pre>" . execPrint("git pull http://username:password@github.com/<user>/<repository>.git master") . "</pre>");
+  // Replace the username and password with yours
+  print("<pre>" . execPrint("git pull http://username:password@github.com/<user>/<repository>.git master") . "</pre>");
+?>
 ```
 
 * Assign the permissions by running below command.
