@@ -15,7 +15,7 @@ function execPrint($command) {
 }
 
 // Replace the username and password with yours
-print("<pre>" . execPrint("git pull http://username:password@github.com/ashish27aghera/quick_india.git master") . "</pre>");
+print("<pre>" . execPrint("git pull http://username:password@github.com/<user>/<repository>.git master") . "</pre>");
 ```
 
 * Assign the permissions by running below command.
