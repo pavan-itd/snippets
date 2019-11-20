@@ -1,4 +1,4 @@
-### Automate the process of deployment in php
+### 1. Automate the process of deployment in php
 
 * Create a file ***pull.php*** into the root directory of your project on the server and paste be below content into it.
 
