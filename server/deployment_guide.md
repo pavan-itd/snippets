@@ -11,7 +11,7 @@ $ psql -U <user-name> -h localhost  -d <database-name> < <file-name>.dump
 
 * Restore database without users
 ```bash
-$ pg_restore -U <user-name> -h localhost -v --clean --no-owner --no-privileges --dbname <database-name> < <file-name>.dump
+$ psql -U itd-psql -h localhost --dbname satellite_development < ~/Documents/latest_database_backup/satellite_14_11_19.dump
 ```
 
 ***
