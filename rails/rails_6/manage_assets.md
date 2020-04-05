@@ -31,4 +31,25 @@ jQuery(window).on('load', function () {
 * Run ```yarn add semantic-ui-sass``` it will add package in package.json file
 
 # 3. Run the application in production mode
-* 
+* Make changes to ```/config/environments/production.rb``` file
+```ruby
+config.assets.compile = false
+# TO
+config.assets.compile = true
+
+config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+to
+config.public_file_server.enabled = true
+```
+
+* Make changes to ```bin/webpack``` file
+```ruby
+ENV["RAILS_ENV"] ||= ENV["RACK_ENV"] || "development"
+ENV["NODE_ENV"] ||= "development"
+
+# TO
+
+ENV["RAILS_ENV"] ||= ENV["RACK_ENV"] || "production"
+ENV["NODE_ENV"] ||= "production"
+```
+
