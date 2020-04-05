@@ -25,3 +25,10 @@ jQuery(window).on('load', function () {
   alert();
 });
 ```
+# 2. Add semantic-ui in rails 6 application
+* Add the ```gem 'semantic-ui-sass'``` in gem file
+* Add the ```require("semantic-ui-sass")``` in /packs/application.js file
+* Run ```yarn add semantic-ui-sass``` it will add package in package.json file
+
+# 3. Run the application in production mode
+* 
