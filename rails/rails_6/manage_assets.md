@@ -53,3 +53,17 @@ ENV["RAILS_ENV"] ||= ENV["RACK_ENV"] || "production"
 ENV["NODE_ENV"] ||= "production"
 ```
 
+* If you have made changes to ```bin/webpack``` file then run below commands to compile the assets for production.
+```bash
+# To make it a clean and straightforward compile job, you need to delete public/assets and public/packs folder.
+
+$ RAILS_ENV=production rake assets:precompile
+$ bin/webpack
+```
+
+* If you don't want to make above changes then you need to run below commands to compile the assests
+```bash
+$ RAILS_ENV=production rake assets:precompile
+$ RAILS_ENV=production RACK_ENV=production NODE_ENV=production bin/webpack
+``
+
