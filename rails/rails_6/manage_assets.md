@@ -65,5 +65,5 @@ $ bin/webpack
 ```bash
 $ RAILS_ENV=production rake assets:precompile
 $ RAILS_ENV=production RACK_ENV=production NODE_ENV=production bin/webpack
-``
-
+```
+# [Reference](https://dev.to/tcgumus/rails-6-webpacker-settings-for-production-1f1e)
