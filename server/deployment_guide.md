@@ -1,3 +1,11 @@
+### NodeJs
+```
+1. Goto Nodejs directory and run below command
+
+pm2 restart all
+```
+
+
 ### Postgresql Commands
 
 * Dump database
