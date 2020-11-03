@@ -14,39 +14,56 @@ $ du -sh <flie-location>
 ```bash
 df -h
 ```
-
-* Redis commands
+## Redis commands
+* # Start server
 ```bash
-# Start server
 $ sudo systemctl start redis-server
-
-# Stop server
+```
+* Stop server
+```bash
 $ sudo systemctl stop redis-server
-
-# Restart server
+```
+* Restart server
+```bash
 $ sudo systemctl restart redis-server
-
-# Check status of server
+```
+* Check status of server
+```bash
 $ sudo systemctl status redis-server
-
-# Check redis log
+```
+* Check redis log
+```bash
 $ sudo tail /var/log/redis/redis-server.log
 ```
 
-* Nginx commands
+## Nginx commands
+* Start server
 ```bash
-# Start server
 $ sudo service nginx start
-
-# Stop server
+```
+* Stop server
+```bash
 $ sudo service nginx stop
-
-# Restart server
+```
+* Restart server
+```bash
 $ sudo service nginx restart
-
-# Reload server
+```
+* Reload server
+```bash
 $ sudo service nginx reload
-
-# Check status of server
+```
+* Check status of server
+```bash
 $ sudo service nginx status
+```
+## Rails server commands
+```
+* Clear production log file
+```bash
+$ bundle exec rake log:clear RAILS_ENV=production
+```
+* Clear any file contents
+```bash
+$ truncate -s 0 <file>
 ```
