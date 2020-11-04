@@ -10,18 +10,27 @@ pm2 restart all
 
 * Dump database
 ```bash
-pg_dump -U <user-name> <database-name> > <file-name>.dump
+pg_dump -U [user] [database-name] > [filename].dump
 ```
 * Restore database
 ```bash
-psql -U <user-name> -h localhost  -d <database-name> < <file-name>.dump
+psql -U [user] -h localhost -d [database-name] < [filename].dump
 ```
 
 * Restore database without users
 ```bash
-pg_restore -U <user-name> -h localhost -v --clean --no-owner --no-privileges --dbname <database-name> < <file-name>.dump
+pg_restore -U [user] -h localhost -v --clean --no-owner --no-privileges --dbname [database-name] < [file-name].dump
 ```
-
+***
+### MySql Commands
+* Dump Database
+```bash
+mysqldump -u [user] -p [database-name] > [filename].sql
+``
+* Restore Database
+```bash
+mysql -u [user] -p [database_name] < [filename].sql
+```
 ***
 
 ### Production commands
