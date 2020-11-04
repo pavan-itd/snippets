@@ -58,7 +58,6 @@ $ sudo service nginx reload
 $ sudo service nginx status
 ```
 ## Rails server commands
-```
 * Clear production log file
 ```bash
 $ bundle exec rake log:clear RAILS_ENV=production
@@ -67,3 +66,10 @@ $ bundle exec rake log:clear RAILS_ENV=production
 ```bash
 $ truncate -s 0 <file>
 ```
+## MySql Commands
+* Enable full group by mode
+```sql
+/* Run this command mysql console */
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+```
+
