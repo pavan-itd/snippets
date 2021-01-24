@@ -67,3 +67,9 @@ $ bundle exec rake log:clear RAILS_ENV=production
 ```bash
 $ truncate -s 0 <file>
 ```
+
+## GIT
+* Reset last pull
+```bash
+git reset --hard HEAD@{1}
+```
