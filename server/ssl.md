@@ -72,3 +72,6 @@ sudo certbot --nginx -d example.com -d www.example.com
 sudo certbot renew --dry-run
 
 ```
+
+# APACHE2
+https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04
