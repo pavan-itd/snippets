@@ -175,13 +175,20 @@ sudo apt install yarn
 # Add the SSH key to the Github account where app repository belongs
 # Add git repository
 
+* Step13: Install image processing libs
+```
+$ sudo apt-get update
+$ sudo apt-get install imagemagick
+$ sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush pngquant
+```
+
 # Check the Capistrano script
 cap production deploy:check
 
 # Create database.yml and secrets.yml file on the server in shared directory
 ```
 
-* Step13: Deploy the Application
+* Step14: Deploy the Application
 ```bash
 cap production deploy
 ```
