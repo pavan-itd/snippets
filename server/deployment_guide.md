@@ -169,19 +169,18 @@ sudo apt update
 sudo apt install yarn
 ```
 
-* Step12: Make change to deploy/production.rb|deploy.rb|environments/production.rb
-```bash
-# Add the IP address and user-name of server
-# Add the SSH key to the Github account where app repository belongs
-# Add git repository
-
-* Step13: Install image processing libs
+* Step12: Install image processing libs
 ```
 $ sudo apt-get update
 $ sudo apt-get install imagemagick
 $ sudo apt-get install -y advancecomp gifsicle jpegoptim libjpeg-progs optipng pngcrush pngquant
 ```
 
+* Step13: Make change to deploy/production.rb|deploy.rb|environments/production.rb
+```bash
+# Add the IP address and user-name of server
+# Add the SSH key to the Github account where app repository belongs
+# Add git repository
 # Check the Capistrano script
 cap production deploy:check
 
