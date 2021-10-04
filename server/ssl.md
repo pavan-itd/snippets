@@ -1,4 +1,6 @@
-# STEP 1 : Installing Certbot
+# INSTALLATION
+
+### STEP 1 : Installing Certbot
 ```bash
 // Add repository
 sudo add-apt-repository ppa:certbot/certbot
@@ -7,7 +9,7 @@ sudo add-apt-repository ppa:certbot/certbot
 sudo apt install python-certbot-nginx
 ```
 
-# STEP 2 : Confirming Nginx’s Configuration
+### STEP 2 : Confirming Nginx’s Configuration
 ```bash
 // Open the server block file for your domain using nano
 sudo nano /etc/nginx/sites-available/example.com
@@ -24,7 +26,7 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-# STEP 3 : Allowing HTTPS Through the Firewall
+### STEP 3 : Allowing HTTPS Through the Firewall
 ```bash
 // Check the firewall status
 sudo ufw status
@@ -62,16 +64,23 @@ Nginx Full (v6)            ALLOW       Anywhere (v6)
 sudo ufw allow ssh
 ```
 
-# STEP 4 : Obtaining an SSL Certificate
+### STEP 4 : Obtaining an SSL Certificate
 ```bash
 sudo certbot --nginx -d example.com -d www.example.com
 ```
 
-# STEP 5 : Verifying Certbot Auto-Renewal
+### STEP 5 : Verifying Certbot Auto-Renewal
 ```bash
 sudo certbot renew --dry-run
 
 ```
 
-# APACHE2
+### APACHE2
 https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04
+
+
+# RENEWAL
+### Check the status of certificate
+```bash
+sudo certbot certificates
+```
