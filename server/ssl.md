@@ -84,3 +84,13 @@ https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s
 ```bash
 sudo certbot certificates
 ```
+
+# INSTALL DOWNLOADED SSL CERTIFICATES
+- Copy the certificate file to location.
+```
+sudo cp <cert file> /usr/local/share/ca-certificates/
+```
+- Update the certificate in system
+```
+sudo update-ca-certificates
+```
