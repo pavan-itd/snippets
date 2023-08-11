@@ -20,3 +20,16 @@ Ver Cluster Port Status Owner    Data directory              Log file
 ```
 
 ![image](https://github.com/pavan-itd/snippets/assets/56384736/57e26ac2-688a-4e62-afd6-b1a81306b68f)
+
+## Download CSV from rails console
+```
+require 'csv' 
+file = "#{Rails.root}/public/product_data.csv"
+products = Product.order(:first_name)
+headers = ["Product ID", "Name", "Price", "Description"]
+CSV.open(file, 'w', write_headers: true, headers: headers) do |writer|
+  products.each do |product| 
+  writer << [product.id, product.name, product.price, product.description] 
+  end
+end
+```
