@@ -14,7 +14,9 @@ $ psql -U <user-name> -h localhost  -d <database-name> < <file-name>.dump
 $ pg_restore -U <user-name> -h localhost -v --clean --no-owner --no-privileges --dbname <database-name> < <file-name>.dump
 ```
 
-psql -U deploy -h localhost -d shypbyte_production_queue < queue_database.dump
+pg_dump -U postgres -Fc shypbyte_development_errors > errors_database.dump
+
+pg_restore -U deploy -h localhost -v --clean --no-owner --no-privileges -d shypbyte_production_errors errors_database.dump
 ***
 
 ### Application deployment steps 18.04
